@@ -7,7 +7,7 @@ from pokestarfansloggingsetup import setup_logger
 def post_table(twitter):
     ta = markdowntable.Table('Post #')
     ta.all_columns('Title', 'Author' , 'Karma')
-    p = [post for post in reddit.subreddit('The_Donald').search('site:twitter.com/%s subreddit:the_donald' %s twitter)]
+    p = [post for post in reddit.subreddit('The_Donald').search('site:twitter.com/{} subreddit:the_donald'.format(twitter))]
     if len(p) > 0:
         for i in range(len(p)):
             po = p[i]
