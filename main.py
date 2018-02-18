@@ -25,7 +25,7 @@ def work_with_match(comment):
     logging.info('Met request of user {}. Wiki link is at {}'.format(comment.author, link))
     
 def main():
-    for comment in reddit.subreddit('all').stream.comments():
+    for comment in reddit.subreddit('Russia_Lago').stream.comments():
         try:
             if '!twittercheck' in comment.body:
                 work_with_match(comment)
