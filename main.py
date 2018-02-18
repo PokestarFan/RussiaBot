@@ -1,7 +1,7 @@
 import praw
 from login import reddit
 import markdowntable
-from pokestarfansloggingsetup import setup.logger
+from pokestarfansloggingsetup import setup_logger
 
 
 def post_table(twitter):
